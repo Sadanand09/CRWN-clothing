@@ -10,6 +10,7 @@ const Checkout = () => {
 
     return (
         <div>
+            <h1>Checkout page</h1>
             {
                 cartItems.map((cartItem) => {
                     const { id, name, quantity } = cartItem;
