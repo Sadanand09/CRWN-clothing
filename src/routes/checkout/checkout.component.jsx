@@ -10,7 +10,7 @@ const Checkout = () => {
 
     return (
         <div>
-            <h1>Checkout page</h1>
+            <h1>Checkout page created</h1>
             {
                 cartItems.map((cartItem) => {
                     const { id, name, quantity } = cartItem;
