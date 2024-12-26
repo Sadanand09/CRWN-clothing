@@ -11,6 +11,7 @@ const Checkout = () => {
     return (
         <div>
             <h1>Checkout page created</h1>
+            <div>
             {
                 cartItems.map((cartItem) => {
                     const { id, name, quantity } = cartItem;
@@ -25,6 +26,7 @@ const Checkout = () => {
 
                 })
             }
+            </div>
         </div>
     )
 };

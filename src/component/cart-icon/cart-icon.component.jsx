@@ -14,7 +14,7 @@ const CartIcon = () => {
     return (
         <div className='cart-icon-container' onClick={toogleIsCartOpen} >
             <ShoppingIcon className='shopping-icon'></ShoppingIcon>
-            <sapn className='item-count'>{ cartCount }</sapn>
+            <span className='item-count'>{ cartCount }</span>
         </div>
     );
 }
