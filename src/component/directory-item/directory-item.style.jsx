@@ -24,6 +24,7 @@ export const Body = styled.div`
         margin: 0 6px 0;
         font-size: 22px;
         color: #4a4a4a;
+        text-transform:uppercase;
       }
   
       p {
@@ -32,9 +33,8 @@ export const Body = styled.div`
       }
 `;
 
-export cosnt
+export const DirectoryItemContainer = styled.div`
 
-.directory - item - container {
     min-width: 30%;
     height: 240px;
     flex: 1 1 auto;
@@ -48,36 +48,21 @@ export cosnt
     &:hover {
       cursor: pointer;
   
-      & .background-image {
+      & ${BackgroundImage} {
         transform: scale(1.1);
         transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
       }
   
-      & .directory-item-body{
+      & ${Body}{
         opacity: 0.9;
       }
-    }
+        &:first-child {
+        margin-right: 7.5px;
+      }
   
-    &.large {
-      height: 380px;
-    }
-  
-    &:first-child {
-      margin-right: 7.5px;
-    }
-  
-    &:last-child {
-      margin-left: 7.5px;
-    }
-  
-    .background-image {
-
-    }
-  
-    .directory-item-body {
-
+        &:last-child {
+        margin-left: 7.5px;
+      }
   
 
-    }
-  }
-  
+`;
