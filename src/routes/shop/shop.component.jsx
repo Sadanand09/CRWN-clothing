@@ -7,13 +7,13 @@ import CategoriesPreview from "../categories-preview/categories-preview.componen
 import "./shop.styles.scss";
 import Category from "../category/category.component.jsx";
 import { getCategoriesAndDocuments } from "../../utils/firebase/firebase.utils";
-import { fetchCategoriesAsync } from "../../store/categories/category.action";
+import { fetchCategoriesStart } from "../../store/categories/category.action";
 
 const Shop = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-      dispatch(fetchCategoriesAsync());
+      dispatch(fetchCategoriesStart());
   }, []);
   return (
     <Routes>
